@@ -1,0 +1,48 @@
+h1{
+  color: rgba(255, 255, 255);
+}
+
+*{
+	box-sizing: border-box;
+}
+
+
+body{
+	background-color: #131019;
+  font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 17rem;
+  grid-template-areas:
+    "nav nav nav"
+    ". body ."
+    ". body ."
+    ". body ."
+    ". body ."
+}
+
+a{
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.dots{
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;
+}
+
+.candlelight{
+  padding-top: 70rem;
+}
+
+#nav{
+  position: absolute;
+  z-index: 15;
+}
+
+#nav a{
+  padding-left: 20rem;
+}
