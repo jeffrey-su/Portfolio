@@ -10,10 +10,10 @@ h1{
 body{
   font-family: Arial, Helvetica, sans-serif;
 	font-size: 1.25rem;
-	background-image: url('/img/dotsBackground1127x627.png');
-	background-repeat: no-repeat;
+	background-image: url("../img/backgroundImage1920x8310.png");
+	/* background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover; */
 
 }
 
@@ -37,16 +37,11 @@ a{
 }
 
 .dots{
-  position: absolute;
   padding-top: 10rem;
   z-index: -1;
-  /* width: auto; */
+  width: auto;
 	height: auto;
 
-}
-
-.candlelight{
-  padding-top: 70rem;
 }
 
 .nav{
@@ -63,4 +58,11 @@ a{
   text-decoration: none;
   color: black;
 	padding-top: 2rem;
+}
+
+.content{
+	padding-top: 20rem;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
 }
