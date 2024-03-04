@@ -4,6 +4,7 @@ h1{
 
 *{
 	box-sizing: border-box;
+	/* border: solid 0.5px black; */
 }
 
 
@@ -11,9 +12,10 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 	font-size: 1.25rem;
 	background-image: url("../img/backgroundImage1920x8310.png");
-	/* background-repeat: no-repeat;
+	background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover; */
+  background-size: cover;
+	background-color: #323232;
 
 }
 
@@ -21,6 +23,13 @@ a{
 	text-decoration: none;
   font-family: 'Roboto Mono', monospace;
   font-weight: 200;
+	font-size: auto;
+}
+
+p{
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 200;
+	font-size: 1.5vw;
 }
 
 .intro{
@@ -36,33 +45,117 @@ a{
 
 }
 
+#dotsContainer{
+	position: relative;
+}
+
 .dots{
-  padding-top: 10rem;
+  padding-top: 3rem;
+
   z-index: -1;
   width: auto;
 	height: auto;
+	max-width: 70vw;
 
 }
 
-.nav{
+#nav{
   z-index: 15;
 	display: flex;
 	flex-wrap: nowrap;
-	justify-content: space-around;
-
-
+	justify-content: space-between;
+	margin-left: 14vw;
+	margin-right: 14vw;
 }
 
-.nav a{
+#nav a{
 
   text-decoration: none;
   color: black;
 	padding-top: 2rem;
 }
 
+.arrow{
+	padding:
+	z-index: 12;
+	position: absolute;
+	/* position: fixed; */
+  right: 0%;
+  bottom: 3%;
+	width: auto;
+	height: auto;
+
+}
+
 .content{
-	padding-top: 20rem;
+	padding-top: 20%;
+	margin-left: 10%;
+	margin-right: 10%;
+	/* display: flex; */
+	/* flex-wrap: nowrap;
+	justify-content: center; */
+}
+
+.contentImg{
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: center;
+}
+
+.contentImg img{
+	width: auto;
+	height: auto;
+	max-width: 80vw;
+}
+
+.candleLightContent{
+	display: flex;
+	justify-content: space-between;
+}
+
+.goSFU{
+	margin-top: 50vh;
+}
+
+.itServices{
+	margin-top: 30vh;
+}
+
+.betterMeals{
+	margin-top: 30vh;
+	margin-bottom: 50vh;
+}
+
+/* FOOTER */
+
+
+footer{
+  background: #323237;
+  box-shadow: 0 50vh 0 50vh #323237;
+}
+
+footer p{
+  font-size: 1vw;
+	color: #FAFAFA;
+}
+
+
+.footer{
+  padding-left: 5vw;
+  padding-top: 4vw;
+}
+
+.footerContent{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footerInfo{
+  align-self: flex-start;
+}
+
+.footerLogo h1{
+  margin-top: 0;
+  margin-bottom: 0;
 }

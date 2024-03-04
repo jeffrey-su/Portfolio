@@ -9,6 +9,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="import" href="img/arrow.svg">
+
     <link href="css/normalize.css" rel="normalize">
     <link href="css/main.css" rel="stylesheet">
 
@@ -16,23 +18,81 @@
   </head>
   <body>
     <header>
-      <nav class="nav">
+      <nav id="nav">
         <a class="name" href="#name">JEFFREY SU</a>
         <a class="about" href="#about">ABOUT</a>
+        <a class="extras" href="#extras">EXTRAS</a>
       </nav>
       <section class="intro">
           <!-- <img src="img/backgroundImage1920x8310.png" class="background" width="1920" height="8310" alt="noisy white background"> -->
-  				<img src ="img/dotsBackground1127x627.png" class="dots" width="1480" height="823.39" alt="dot pattern blue to grey gradient background">
-
+          <picture id="dotsContainer">
+            <div class="arrowDotContainer">
+              <img src ="img/dotsBackground1127x627.png" class="dots" width="1127" height="627" draggable="false" alt="dot pattern blue to grey gradient background">
+              <!-- <img src ="img/dotsBackground1127x627.png" class="dots" width="1480" height="823.39" draggable="false" alt="dot pattern blue to grey gradient background"> -->
+              <a href="#nav"><img src="img/arrow.svg" class="arrow"></a>
+            </div>
+          </picture>
       </section>
-
-
-
 
     </header>
 
     <section class="content">
-      <img src ="img/candlelightThumb1100×575.png" width="1100" height="575" alt="black and white thumbnail for a project">
+      <div class="candleLight">
+        <div class="candleLightContent">
+          <p>CANDLELIGHT CONCERTS - ART DIRECTION</p>
+          <p>SS2023 TEAM</p>
+        </div>
+        <div class="contentImg">
+          <img class=""src ="img/candlelightThumb1100×575.png" width="1100" height="575" alt="black and white thumbnail for a project">
+        </div>
+      </div>
+
+      <div class="goSFU">
+        <div class="candleLightContent">
+          <p>CANDLELIGHT CONCERTS - ART DIRECTION</p>
+          <p>SS2023 TEAM</p>
+        </div>
+        <div class="contentImg">
+          <img class=""src ="img/goSFUThumb1100×575.png" width="1100" height="575" alt="black and white thumbnail for a project">
+        </div>
+      </div>
+
+      <div class="itServices">
+        <div class="candleLightContent">
+          <p>CANDLELIGHT CONCERTS - ART DIRECTION</p>
+          <p>SS2023 TEAM</p>
+        </div>
+        <div class="contentImg">
+          <img class=""src ="img/itServicesThumb1100×575.png" width="1100" height="575" alt="black and white thumbnail for a project">
+        </div>
+      </div>
+
+      <div class="betterMeals">
+        <div class="candleLightContent">
+          <p>CANDLELIGHT CONCERTS - ART DIRECTION</p>
+          <p>SS2023 TEAM</p>
+        </div>
+        <div class="contentImg">
+          <img class=""src ="img/betterMealsThumb1100×575.png" width="1100" height="575" alt="black and white thumbnail for a project">
+        </div>
+      </div>
     </section>
   </body>
+
+  <footer>
+    <section class="footer">
+      <section class="footerContent">
+
+
+          <div class="footerInfo">
+            <a href="#"><p>© Jeffrey Su 2024</p></a>
+
+          </div>
+
+
+    </section>
+
+    </section>
+
+  </footer>
 </html>
