@@ -3,8 +3,14 @@
   Default styling for the style guide
 */
 body {
-  font-family: 'PP Supply Mono', 'Roboto Mono', sans-serif;
+  font-family: 'PP Mori', 'Roboto Mono', sans-serif;
   padding: 2rem;
+
+  background-image: url("../img/backgroundImage1920x8310.png");
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+	background-color: #323232;
 }
 
 .element {
@@ -16,45 +22,50 @@ body {
 
 section{
     margin-bottom: 4rem;
+    background-image: url("../img/backgroundImage1920x8310.png");
+  	background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1{
-  font-family: 'PP Neue Montreal Mono', 'Impact', sans-serif;
-  font-size: 2.5rem;
-  text-transform: uppercase;
+  font-family: 'PP Mori', 'Tahoma', sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+  font-style: italic;
 }
 
 h2 {
-  font-family: 'PP Neue Montreal Mono Book', 'Tahoma', sans-serif;
-  font-weight: 100;
-  text-transform: uppercase;
+  font-family: 'PP Mori', 'Tahoma', sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #9D9B9B;
 }
 
 h3 {
-  font-family: 'PP Neue Montreal Mono Book', 'Tahoma', sans-serif;
+  font-family: 'PP Mori', 'Tahoma', sans-serif;
   font-weight: 100;
   margin-top: 1rem;
-  text-transform: uppercase;
+
 }
 
 h4 {
-  font-family: 'PP Neue Montreal Mono Book', 'Tahoma', sans-serif;
-  text-transform: uppercase;
+  font-family: 'PP Mori', 'Tahoma', sans-serif;
   font-weight: 100;
   margin-bottom: 0.25rem;
 }
 
 a{
 	text-decoration: none;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'PP Mori', monospace;
   font-weight: 200;
 	font-size: auto;
 }
 
 p{
-	font-family: 'Roboto Mono', monospace;
-	font-weight: 200;
-	font-size: 1.5vw;
+	font-family: 'PP Mori', monospace;
+	font-weight: 300;
+	font-size: 12px;
+  line-height: 1.1rem;
 }
 
 a:hover{
@@ -65,7 +76,7 @@ a:hover{
 nav{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
 
 
 }
@@ -92,17 +103,71 @@ nav a:hover, nav a:focus {
   justify-content: center;
 }
 
-.products{
-  margin-top: 5rem;
-  padding-left: 20vw;
-  padding-right: 20vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.contentImg{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
 }
 
-.product img{
-  padding: 5rem;
+.contentImg img{
+	width: auto;
+	height: auto;
+	max-width: 100%;
+
+}
+.detailImg{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+
+  background-color: rgba(142, 142, 142, 17%);
+}
+
+.detailImg img{
+  padding-top: 5%;
+  width: auto;
+  height: auto;
+  max-width: 90%;
+}
+
+.detail2Img{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+
+  background-color: rgba(142, 142, 142, 17%);
+}
+
+.detail2Img img{
+  padding: 5%;
+  max-width: 100%;
+}
+
+.detailContent{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+  padding-bottom: 5%;
+
+  background-color: rgba(142, 142, 142, 17%);
+}
+
+.detailContent3{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+  background-color: rgba(142, 142, 142, 17%);
+}
+
+.detailPara{
+  max-width: 40%
+}
+
+.detailPara3{
+  max-width: 20%
 }
 
 .headerLink{
@@ -118,6 +183,7 @@ code {
   display: block;
 }
 .imgLink{
+  transition: opacity 0.5s ease-in-out;
 }
 .imgLink:hover{
   opacity: 70%;
@@ -292,10 +358,26 @@ select{
   padding: 10px;
   margin: 8px 0;
 }
-#paymentFormInput{
-  width: 30.6rem;
-  padding: 10px;
-  margin: 8px 0;
+
+.content{
+	margin-left: 12vw;
+	margin-right: 12vw;
+
+}
+
+.detail1{
+	margin-left: 12vw;
+	margin-right: 12vw;
+}
+
+.detail2{
+	margin-left: 12vw;
+	margin-right: 12vw;
+}
+
+.candleLightContent{
+	display: flex;
+	justify-content: space-between;
 }
 
 input[type=text], input[type=email], input[type=tel]{
@@ -373,34 +455,23 @@ input[type=text]:focus, .paymentFormInput:focus {
 
 
 @font-face {
-    font-family: 'PP Supply Mono';
-    src: url('/fonts/PPSupplyMono-Ultralight.woff2') format('woff2'),
-        url('/fonts/PPSupplyMono-Ultralight.woff') format('woff'),
-        url('/fonts/  PPSupplyMono-Ultralight.ttf') format('truetype');
+    font-family: 'PP Mori';
+    src: url('/fonts/PPMori-Regular.woff2') format('woff2'),
+        url('/fonts/PPMori-Regular.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'PP Neue Montreal Mono';
-    src: url('/fonts/PPNeueMontrealMono-Bold.woff2') format('woff2'),
-        url('/fonts/PPNeueMontrealMono-Bold.woff') format('woff'),
-        url('/fonts/PPNeueMontrealMono-Bold.ttf') format('truetype');
+    font-family: 'PP Mori Italics';
+    src: url('/fonts/PPMori-RegularItalic.woff2') format('woff2'),
+        url('/fonts/PPMori-RegularItalic.ttf') format('truetype');
     font-weight: bold;
-    font-style: normal;
+    font-style: italic;
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'PP Neue Montreal Mono Book';
-    src: url('/fonts/PPNeueMontrealMono-Book.woff2') format('woff2'),
-        url('/fonts/PPNeueMontrealMono-Book.woff') format('woff'),
-        url('/fonts/PPNeueMontrealMono-Book.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
 .profileName{
   color: #FF3D00;
