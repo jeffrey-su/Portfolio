@@ -134,13 +134,14 @@ nav a:hover, nav a:focus {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: center;
-
   background-color: rgba(142, 142, 142, 17%);
 }
 
 .detail2Img img{
-  padding: 5%;
-  max-width: 100%;
+  padding: 1%;
+  max-width: 33%;
+  height: auto;
+  width: 33%;
 }
 
 .detailContent{
