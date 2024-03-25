@@ -40,21 +40,33 @@ p{
 	height: 100vh;
 }
 
+.circle{
+	height: 1.5vw;
+  width: 1.5vw;
+  background-color: #9B9B9B;
+  border-radius: 50%;
+	margin: 3%;
+}
+
 .intro{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+	flex-direction: column;
+	margin-left: 14vw;
+	margin-right: 14vw;
 }
 
 .background{
   position: absolute;
   z-index: -2
 
-
 }
 
 #dotsContainer{
-	position: relative;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
 }
 
 .dots{
@@ -63,7 +75,7 @@ p{
   z-index: -1;
   width: auto;
 	height: auto;
-	max-width: 70vw;
+	max-width: 100%;
 
 }
 
@@ -72,12 +84,10 @@ p{
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;
-	margin-left: 14vw;
-	margin-right: 14vw;
+	width: 100%;
 }
 
 #nav a{
-
   text-decoration: none;
   color: black;
 	padding-top: 2rem;
@@ -120,6 +130,7 @@ p{
 .candleLightContent{
 	display: flex;
 	justify-content: space-between;
+	margin-top: 30vh;
 }
 
 .goSFU{

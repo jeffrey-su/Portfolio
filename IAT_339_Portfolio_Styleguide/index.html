@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="PPSupplyMono-Ultralight.woff2" as="font" type="font/woff2" crossorigin>
+
+    <title>P01 - Style Guide Template</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="normalize">
+
+  </head>
+
+  <body>
+    <header>
+      <h1>[ICON] Style Guide</h1>
+
+      <p>A template you can use to start building out your own style guides with.</p>
+
+
+      <nav class = "nav">
+        <a href="#interactive_elements">INTERACTIVE ELEMENTS</a>
+        <a href="#text_elements">TEXT ELEMENTS</a>
+        <a href="#combined_elements">COMBINED ELEMENTS</a>
+        <a href="productListing.html">PRODUCT LISTING TEMPLATE</a>
+        <a href="checkout.html">CHECKOUT TEMPLATE</a>
+        <a href="#citations">CITATIONS</a>
+      </nav>
+    </header>
+
+    <h2>INTERACTIVE ELEMENTS</h2>
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+
+
+      <section class="intElement1">
+        <h3>In-text link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.infoLink</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;Click &lt;a href="https://www.sfu.ca/~jgs7/01-HTML-Intro-Starter_Files/"class="link"&gt;this link&lt;/a&gt;for more info&lt;/p&gt; </code>
+        <p>Click <a href="https://www.sfu.ca/~jgs7/01-HTML-Intro-Starter_Files/" class="infoLink">this link</a> for more info </p>
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="intElement2">
+
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.defaultButton</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;input class="defaultButton "type="button" name="defaultButton" value="Default Button"&gt;</code>
+        <input class="defaultButton" type="button" name="defaultButton" value="Default Button">
+
+      </section>
+
+
+      <section class="intElement3">
+        <h3>Submit/Reset Buttons</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.navSubmit</p>
+          <p>.navReset</p>
+
+          <h4>Sample code:</h4>
+          <code> &lt;button type="navSubmit" class="Submit" value="Submit"&gt;Submit&lt;/button&gt;<br>
+          &lt;button type="navReset"  class="Reset" value="Reset"&gt;Reset&lt;/button&gt;</code>
+          <button type="Submit" class="navSubmit" value="Submit">Submit</button>
+          <button type="Reset" class="navReset" value="Reset">Reset</button>
+      </section>
+
+
+      <section class="intElement4">
+        <h3>Text Input Field with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.navInput</p>
+
+
+        <h4>Sample code:</h4>
+
+        <code>&lt;label for="textInput"&gt;Text Input&lt;/label&gt;<br>
+
+        &lt;input type="text" id="navInput" name="input"&gt;</code>
+
+        <label for="textInput">Text Input</label>
+        <input type="text" id="textInput" name="input">
+      </section>
+
+
+      <section class="intElement5">
+        <h3>Radio Button with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>#radioInput</p>
+
+
+        <h4>Sample code:</h4>
+
+        <code>&lt;label for="radioInput"&gt;Radio Input&lt;/label&gt;<br>
+        &lt;input type="radio" id="radioInput" name="radioInput"&gt;</code>
+
+        <label for="radioInput">Radio Input</label>
+        <input type="radio" id="radioInput" name="radioInput">
+      </section>
+
+
+      <section class="intElement6">
+        <h3>Image as a Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.imgLink</p>
+
+        <h4>Sample code:</h4>
+
+        <code>&lt;a href="https://www.artofplay.com/products/curious-wonders-playing-cards?_pos=29&_fid=14fdbd34d&_ss=c"&gt;&lt;img src="img/curiousWondersTreated1000x1000.png" class="imgLink" width="500" height="500" alt="A blue deck of playing cards on a blank background"&gt;&lt;/a&gt;</code>
+        <a href="https://www.artofplay.com/products/curious-wonders-playing-cards?_pos=29&_fid=14fdbd34d&_ss=c"><img src="img/curiousWondersTreated1000x1000.png" class="imgLink" width="500" height="500" alt="A blue deck of playing cards on a blank background"></a>
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <h2>Text Elements</h2>
+    <section id="text_elements">
+
+
+      <section class="textElement1">
+        <h3>Headings</h3>
+
+        <h4>CSS selector:</h4>
+        <p>h1</p>
+        <p>h2</p>
+        <p>h3</p>
+        <p>h4</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;h1&gt; headings &lt;/h1&gt;&lt;h2&gt; headings &lt;/h2&gt;&lt;h3&gt; headings &lt;/h3&gt;&lt;h4&gt; headings &lt;/h4&gt;</code>
+        <h1> HEADING 01 </h1>
+          <h2> HEADING 02 </h2>
+            <h3> HEADING 03 </h3>
+              <h4> HEADING 04 </h4>
+      </section>
+
+      <section class="textElement2">
+        <h3>Paragraphs</h3>
+
+        <h4>CSS selector:</h4>
+        <p>p</p>
+
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;The body copy should look like this. Text size should be less than 25px, and font weight should be extra light.
+            body copy are used for descriptions. Product details, extra information, and expanded story should use this style of body copy.&lt;/p&gt;
+
+            &lt;p&gt;Body copy should be kept clean and simple focusing on accessibility using breaks when needed to split large paragraphs and separate sections.&lt;/p&gt;
+        </code>
+        <p>The body copy should look like this. Text size should be less than 25px, and font weight should be extra light.
+            body copy are used for descriptions. Product details, extra information, and expanded story should use this style of body copy.</p>
+
+        <p>Body copy should be kept clean and simple focusing on accessibility using breaks when needed to split large paragraphs and separate sections.</p>
+      </section>
+
+      <section class="textElement3">
+        <h3>Numbered Lists</h3>
+
+        <h4>CSS selector:</h4>
+        <p>ol</p>
+
+
+        <h4>Sample code:</h4>
+        <code>&lt;ol&gt;
+          &lt;li&gt; One &lt;/li&gt;
+          &lt;li&gt; Two &lt;/li&gt;
+          &lt;li&gt; Three &lt;/li&gt;
+          &lt;li&gt; Four &lt;/li&gt;
+        &lt;/ol&gt;</code>
+        <ol>
+          <li> One </li>
+          <li> Two </li>
+          <li> Three </li>
+          <li> Four </li>
+        </ol>
+      </section>
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.nav</p>
+
+
+        <h4>Sample code:</h4>
+        <code>&lt;nav class="nav"&gt;
+          &lt;a href="index.html" class="navHome"&gt; HOME &lt;/a&gt;<br>
+          &lt;a href="index.html" class="navProducts"&gt; PRODUCTS &lt;/a&gt;<br>
+          &lt;a href="index.html" class="navAbout"&gt; ABOUT &lt;/a&gt;<br>
+          &lt;a href="index.html" class="navContact"&gt; CONTACT &lt;/a&gt;<br>
+        &lt;/nav&gt;</code>
+        <nav class="nav">
+
+            <a href="index.html" class="navHome"> HOME </a>
+            <a href="index.html" class="navProducts"> PRODUCTS </a>
+            <a href="index.html" class="navAbout"> ABOUT </a>
+            <a href="index.html" class="navContact"> CONTACT </a>
+
+        </nav>
+      </section>
+
+      <section class="element">
+        <h3>Product Listing</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.productListing</p>
+
+
+        <h4>Sample code:</h4>
+
+        <code>&lt;div class="productListing"&gt;<br>
+          &lt;div class="productListing"&gt;<br>
+          &lt;h1&gt;Round Titanium Pen&lt;/h1&gt;<br>
+          &lt;h2&gt;$64.00&lt;/h2&gt;<br>
+          &lt;a href="https://cwandt.com/products/pen-type-b?variant=30696392260"&gt;&lt;img src="img/titaniumPen1018x568.png" width="1018" height="568" alt="A metal fountain pen on a white background"&gt;&lt;/a&gt;<br>
+            &lt;p&gt;A minimal everyday pen, over-engineered to last generations.<br>
+
+              The ultimate pen for illustrators, designers, and architects.
+              Precision machined to create a piston-like effect between the pen and sleeve. The pen falls slowly and makes a nice popping sound when you pull it quickly from its sleeve.
+              No visible logo. &lt;/p&gt;<br>
+            &lt;p&gt;&lt;a href="description.HTML" class="link"&gt;Product details&lt;/a&gt;&lt;/p&gt;<br>
+            &lt;input class="defaultButton" type="button" name="addCart" value="Add to Cart"&gt;&lt;/input&gt;<br>
+          &lt;/div&gt;<br>
+      </code>
+
+        <div class="productListing">
+        <h1>Round Titanium Pen</h1>
+        <h2>$64.00</h2>
+        <a href="https://cwandt.com/products/pen-type-b?variant=30696392260"><img src="img/titaniumPen1018x568.png" width="1018" height="568" alt="A metal fountain pen on a white background"></a>
+          <p>A minimal everyday pen, over-engineered to last generations.
+
+            The ultimate pen for illustrators, designers, and architects.
+
+            Precision machined to create a piston-like effect between the pen and sleeve. The pen falls slowly and makes a nice popping sound when you pull it quickly from its sleeve.
+
+            No visible logo. </p>
+          <p><a href="description.HTML" class="link">Product details</a></p>
+          <input class="defaultButton" type="button" name="addCart" value="Add to Cart"></input>
+        </div>
+      </section>
+
+      <h3>Payment Form</h3>
+      <section class="paymentFormBox">
+
+        <div class="paymentFormCode">
+          <h4>CSS selector:</h4>
+          <p>.paymentForm</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;form class="paymentForm" action="index.html" method="post"&gt;<br>
+
+            &lt;h2&gt;Shipping address&lt;/h2&gt;<br>
+
+            &lt;div class="paymentFormField"&gt;<br>
+              &lt;label for="paymentFirstName"&gt;&lt;/label&gt;<br>
+              &lt;input class="paymentFormInput" type="text" name="paymentFirstName" placeholder="First name" &gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="paymentFormField"&gt;<br>
+              &lt;label for="paymentLastName"&gt;&lt;/label&gt;<br>
+              &lt;input class="paymentFormInput" type="text" name="paymentLastName" placeholder="Last name"&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="paymentFormField"&gt;<br>
+              &lt;label for="paymentAddress"&gt;&lt;/label&gt;<br>
+              &lt;input class="paymentFormInput" type="text" name="paymentAddress" placeholder="Address"&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="paymentFormField"&gt;<br>
+              &lt;label for="paymentApartment"&gt;&lt;/label&gt;<br>
+              &lt;input class="paymentFormInput" type="text" name="paymentApartment" placeholder="Apartment, suite (optional)"&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="paymentFormField"&gt;<br>
+              &lt;label for="paymentCity"&gt;&lt;/label&gt;<br>
+              &lt;input class="paymentFormInput" type="text" name="paymentCity" placeholder="City"&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="paymentFormField"&gt;<br>
+              &lt;label for="paymentProvince"&gt;&lt;/label&gt;<br>
+                &lt;select class="paymentProvince" name="paymentProvince" value="Province"&gt;<br>
+                  &lt;option value="select"&gt;Province&lt;/option&gt;<br>
+                  &lt;option value="britishColumbia"&gt;British Columbia&lt;/option&gt;<br>
+                  &lt;option value="manitoba"&gt;Manitoba&lt;/option&gt;<br>
+                  &lt;option value="newBrunswick"&gt;New Brunswick&lt;/option&gt;<br>
+                  &lt;option value="newfoundland"&gt;Newfoundland&lt;/option&gt;<br>
+                  &lt;option value="northwestTerritories"&gt;Northwest Territories&lt;/option&gt;<br>
+                  &lt;option value="novaScotia"&gt;Nova Scotia&lt;/option&gt;<br>
+                  &lt;option value="nunavut"&gt;Nunavut&lt;/option&gt;<br>
+                  &lt;option value="ontario"&gt;Ontario&lt;/option&gt;<br>
+                  &lt;option value="pei"&gt;Prince Edward Island&lt;/option&gt;<br>
+                  &lt;option value="quebec"&gt;Quebec&lt;/option&gt;<br>
+                  &lt;option value="saskatchewan"&gt;Saskatchewan&lt;/option&gt;<br>
+                  &lt;option value="yukon"&gt;Yukon&lt;/option&gt;<br>
+                &lt;/select&gt;<br>
+
+                &lt;label for="paymentPostalCode"&gt;&lt;/label&gt;<br>
+                &lt;input class="paymentFormPostalCode" type="text" name="paymentPostalCode" placeholder="Postal Code"&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;h2&gt;Contact&lt;/h2&gt;<br>
+            &lt;div class="paymentFormField"&gt;<br>
+              &lt;label for="emailInput"&gt;&lt;/label&gt;<br>
+              &lt;input type="email" name="emailInput" placeholder="Email Address"&gt;<br>
+              &lt;div id="newsletter"&gt;<br>
+                &lt;label for="paymentNewsLetterCheckbox"&gt;Email me with a newsletter and offers&lt;/label&gt;<br>
+                &lt;input type="checkbox" id="paymentNewsLetterCheckbox" name="newsletterCheck" placeholder=""&gt;<br>
+              &lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="paymentFormField"&gt;<br>
+              &lt;label for="paymentPhone"&gt;&lt;/label&gt;<br>
+              &lt;input type="tel" name="paymentPhone" placeholder="Phone"&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;h2&gt;Payment Information&lt;/h2&gt;<br>
+
+            &lt;div class="paymentFormField"&gt;<br>
+              &lt;label for="cardNumber"&gt;&lt;/label&gt;<br>
+              &lt;input type="text" name="cardNumber" placeholder="Credit/Debit Card Number"&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="paymentFormField"&gt;<br>
+              &lt;label for="expirationDate"&gt;&lt;/label&gt;<br>
+              &lt;input type="text" name="expirationDate" placeholder="Expiration MM/YY"&gt;<br>
+
+              &lt;label for="cvv"&gt;&lt;/label&gt;<br>
+              &lt;input type="text" name="cvv" placeholder="CVV"&gt;<br>
+
+            &lt;/div&gt;<br>
+
+            &lt;div class="paymentFormField"&gt;<br>
+              &lt;input class="paymentFormSubmit" type="submit" name="paymentSubmit" value="Submit"&gt;<br>
+              &lt;input class="paymentFormSubmit" type="reset" name="paymentReset" value="Reset"&gt;<br>
+            &lt;/div&gt;<br>
+          &lt;/form&gt;</code>
+        </div>
+
+
+
+        <form class="paymentForm" action="index.html" method="post">
+
+          <h2>Shipping address</h2>
+
+          <div class="paymentFormField">
+            <label for="paymentFirstName"></label>
+            <input class="paymentFormInput" type="text" name="paymentFirstName" placeholder="First name" >
+          </div>
+
+          <div class="paymentFormField">
+            <label for="paymentLastName"></label>
+            <input class="paymentFormInput" type="text" name="paymentLastName" placeholder="Last name">
+          </div>
+
+          <div class="paymentFormField">
+            <label for="paymentAddress"></label>
+            <input class="paymentFormInput" type="text" name="paymentAddress" placeholder="Address">
+          </div>
+
+          <div class="paymentFormField">
+            <label for="paymentApartment"></label>
+            <input class="paymentFormInput" type="text" name="paymentApartment" placeholder="Apartment, suite (optional)">
+          </div>
+
+          <div class="paymentFormField">
+            <label for="paymentCity"></label>
+            <input class="paymentFormInput" type="text" name="paymentCity" placeholder="City">
+          </div>
+
+          <div class="paymentFormField">
+            <label for="paymentProvince"></label>
+              <select class="paymentProvince" name="paymentProvince" value="Province">
+                <option value="select">Province</option>
+                <option value="britishColumbia">British Columbia</option>
+                <option value="manitoba">Manitoba</option>
+                <option value="newBrunswick">New Brunswick</option>
+                <option value="newfoundland">Newfoundland</option>
+                <option value="northwestTerritories">Northwest Territories</option>
+                <option value="novaScotia">Nova Scotia</option>
+                <option value="nunavut">Nunavut</option>
+                <option value="ontario">Ontario</option>
+                <option value="pei">Prince Edward Island</option>
+                <option value="quebec">Quebec</option>
+                <option value="saskatchewan">Saskatchewan</option>
+                <option value="yukon">Yukon</option>
+              </select>
+
+              <label for="paymentPostalCode"></label>
+              <input class="paymentFormPostalCode" type="text" name="paymentPostalCode" placeholder="Postal Code">
+          </div>
+
+          <h2>Contact</h2>
+          <div class="paymentFormField">
+            <label for="emailInput"></label>
+            <input type="email" name="emailInput" placeholder="Email Address">
+            <div id="newsletter">
+              <label for="paymentNewsLetterCheckbox">Email me with a newsletter and offers</label>
+              <input type="checkbox" id="paymentNewsLetterCheckbox" name="newsletterCheck">
+            </div>
+          </div>
+
+          <div class="paymentFormField">
+            <label for="paymentPhone"></label>
+            <input type="tel" name="paymentPhone" placeholder="Phone">
+          </div>
+
+          <h2>Payment Information</h2>
+
+          <div class="paymentFormField">
+            <label for="cardNumber"></label>
+            <input type="text" name="cardNumber" placeholder="Credit/Debit Card Number">
+          </div>
+
+          <div class="paymentFormField">
+            <label for="expirationDate"></label>
+            <input type="text" name="expirationDate" placeholder="Expiration MM/YY">
+
+            <label for="cvv"></label>
+            <input type="text" name="cvv" placeholder="CVV">
+
+          </div>
+
+          <div class="paymentFormField">
+            <input class="navSubmit" type="submit" name="paymentSubmit" value="Submit">
+            <input class="navReset" type="reset" name="paymentReset" value="Reset">
+          </div>
+        </form>
+      </section>
+
+      <h3>Checkout Cart</h3>
+      <section class="checkoutBox">
+
+        <div class="checkoutCode">
+          <h4>CSS selector:</h4>
+          <p>.checkoutCart</p>
+
+
+          <h4>Sample code:</h4>
+          <code>&lt;div class="checkoutCart"&gt;<br>
+                &lt;h1&gt;Cart&lt;/h1&gt;<br>
+                &lt;img src="img/taskKnife348x486.png" alt="aluminum unibody knife" width="100" height="100"&gt;<br>
+                &lt;p&gt;Unibody Task Knife [1]   - | +&lt;/p&gt;<br>
+                &lt;h3&gt;$90.00&lt;/h3&gt;<br>
+                &lt;img src="img/titaniumPen1018x568.png" alt="Round Titanium Pen" width="100" height="100"&gt;<br>
+                &lt;p&gt;Round Titanium Pen [1]   - | +&lt;/p&gt;<br>
+                  &lt;h3&gt;$64.00&lt;/h3&gt;<br>
+                &lt;div class="subtotal"&gt;<br>
+                  &lt;h2&gt;Subtotal (2 Items) : $154 &lt;/h2&gt;<br>
+                  &lt;label for="checkoutButton"&gt;&lt;/label&gt;<br>
+                  &lt;input class="defaultButton" type="button" name="checkoutButton" value="Checkout"&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/div&gt;</code>
+        </div>
+
+
+
+        <div class="checkoutCart">
+            <h1>Cart</h1>
+            <img src="img/taskKnife348x486.png" alt="aluminum unibody knife" width="100" height="100">
+            <p>Unibody Task Knife [1]   - | +</p>
+            <h3>$90.00</h3>
+            <img src="img/titaniumPen1018x568.png" alt="Round Titanium Pen" width="100" height="100">
+            <p>Round Titanium Pen [1]   - | +</p>
+              <h3>$64.00</h3>
+            <div class="subtotal">
+              <h2>Subtotal (2 Items) : $154 </h2>
+
+              <label for="checkoutReset"></label>
+              <input class="navReset" type="button" name="checkoutReset" value="Clear Cart">
+
+              <label for="checkoutButton"></label>
+              <input class="defaultButton" type="button" name="checkoutButton" value="Checkout">
+            </div>
+        </div>
+      </section>
+
+      <section id="branding">
+        <h1>Branding Basics</h1>
+        <h2>What does it offer?</h2>
+        <p>Our [ICON] is an online retailer which sells products that focus on the modern industrial design of everyday items. We emphasise quality of the product
+          through material choice, using titanium brass, aluminium, high quality plastics and synthetics. Specialising in computer keyboards, they offer a wide variety of styles
+           and options which all provide a premium experience. Along with keyboards, premium stationery and everyday carry items (pens, cutting utensils, tools) are offered
+            with the same expectation of quality and clean minimal design language.</p>
+
+        <h2>Who is [ICON] to potential customers?</h2>
+
+        <p>[ICON] has a friendly yet professional demeanour but focuses more on product design, drawing customers in through distinct styling rather than a friendly personality.
+          They wish for the customer to fall in love with the work and connect with the product rather than the company as a focus.</p>
+
+          <p>The target audience for these items are hobbyists, (people who have many different hobbies within a scope) minimalists, and industrial designers. All of
+             which have an affinity for “form and function” goods which are not only functional but overengineered to provide both function and form. </p>
+
+          <h2>Customer Profiles</h2>
+
+          <h3 class="profileName">Alex - 31: Veteran hobbyist</h3>
+
+          <ul>
+            <li>Has progressed through the entry stages of many hobbies; caligraphy, mechanical keyboards, every day carry, and actively pursues a higher end luxury experiences.</li>
+            <li>Enjoys photography, minimalism, material design, architecture.</li>
+            <li>Constantly looking for a new world of bespoke items to understand</li>
+          </ul>
+
+          <h3 class="profileName">Sarah - 23: Hobby enthusiast</h3>
+
+          <ul>
+            <li>Growing knowledge of mechanical keyboards and material design</li>
+            <li>Is very reserved in his purchases only buying entry to mid level products and is ready for a higher end experience</li>
+            <li>Looking to start a "buy it for life" mentality and embrace minimalism</li>
+          </ul>
+
+          <h3 class="profileName">Ryan - 36: Amateur enthusiast, architecht and industrial designer</h3>
+
+          <ul>
+            <li>Career in a design field</li>
+            <li>limited experience with mechanical keyboards, but understands the fundamentals</li>
+            <li>Appreciates bespoke items and niche tools to help with everyday life</li>
+          </ul>
+        <h3>Why might someone to purchase a product from [ICON]</h3>
+
+        <p>[ICON] relies on the unique clean and industrial styling of its products to entice someone to purchase them. They use minimalistic photography to showcase their designs,
+           however the main draw is to create items that are not offered anywhere else. May this be the design itself, or simply the material usage which would allow the products to be
+           unique and desired. The website is easy to navigate and makes the commerce experience straightforward and aims to be as smooth as possible. </p>
+        <div class="brandingBox">
+            <img class="brandingimg1" src="img/typeStyling1920x1080.png" width="960" height="540" alt="type styling">
+            <p class="brandingp1">For the typefaces, Neue Montreal Mono from Pangram Pangram suited the clean and minimal aesthetic well at h1 and h2. Mono space typefaces are easy to read and fit the "Form and Function" styling.
+            as for body copy, Pangran Pangram's Supply Sans  is blocky and industrial which pairs well with the clean bold lines of Neue Montreal Mono.</p>
+
+            <img class="brandingimg2" src="img/systemFonts1920x1080.png" width="960" height="540" alt="system font styling ">
+            <p lass="brandingp2">Going into usability, System fonts should be used if the above mentioned typefaces are not available or cannot be injected in the markup. Choosing from the list of system typefaces available,
+            Impact for h1, Tahoma for h2 and Courier New for body copy are the most similar to the typefaecs above. Though not a perfect match, they still have similar qualities and funtion the same roles.</p>
+
+            <img class="brandingimg3" src="img/colourStyling1920x1080.png" width="960" height="540" alt="colour styling">
+            <p lass="brandingp3">Thoughtfully designed products are what make the company unique. To fit that, a palatte that allows for the products to speak for themselves is used. A white background helps to contrast with dark environments
+            the customer may be in allowing for higher visibility and contrast. It also allows for the product to stand out against the stark white. Dividers are in a grey, not black as not to have too drastic of a change
+            and ease the customer into the interface, rather than being uncomfortable. Finally, the bright blue accent allows for colour to be introduced as to provide more contrast between both the products, white space, and
+            the dividing colour. The blue is similar to the blue used on blueprints harkoning back to the industrial style of the company.</p>
+        </div>
+
+
+
+      </section>
+
+    <section id="citations">
+      <h1>Citations</h1>
+
+      <ul>
+        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+        <li>W3Schools. writer. 2021. <strong>HTML &lt;label&gt; tag [Resource]</strong>. Retrieved from <a href="https://www.w3schools.com/tags/tag_label.asp">https://www.w3schools.com/tags/tag_label.asp"</a>https://www.w3schools.com/tags/tag_label.asp">https://www.w3schools.com/tags/tag_label.asp</li>
+        <li>cwandt. Designer. 2019. <strong>Pen Type A [Image]</strong>. Retrieved from <a href="https://cwandt.com/products/pen-type-b?variant=30696392260"> https://cwandt.com/products/pen-type-b?variant=30696392260</a></li>
+        <li>RAMA Works. Designer. 2021. <strong>u80b Keyboard [Image]</strong>. Retrieved from <a href="https://rama.works/#/u80b/">https://rama.works/#/u80b/</a></li>
+        <li>RAMA Works. Designer. 2021. <strong>u80b Keyboard [Image]</strong>. Retrieved from <a href="https://rama.works/#/u80b/">https://rama.works/#/u80b/</a></li>
+        <li>RAMA Works. Designer. 2021. <strong>m50a Keyboard [Image]</strong>. Retrieved from <a href="https://rama.works/#/m50a/">https://rama.works/#/m50a/</a></li>
+        <li>RAMA Works. Designer. 2021. <strong>duck switch[Image]</strong>. Retrieved from <a href="https://rama.works/#/duck-switch/">https://rama.works/#/duck-switch/</a></li>
+        <li>Art of Play. Designer. 2023. <strong>Curious Wonders Playing Cards[Image]</strong>. Retrieved from <a href="https://www.artofplay.com/products/curious-wonders-playing-cards?_pos=28&_fid=a0b1592da&_ss=c">https://www.artofplay.com/products/curious-wonders-playing-cards?_pos=28&_fid=a0b1592da&_ss=c</a></li>
+        <li>Pangram Pangram. Designer. 2023. <strong>Neue Montreal Mono TRIAL[Font]</strong>. Retrieved from <a href="https://pangrampangram.com/products/neue-montreal-mono">https://pangrampangram.com/products/neue-montreal-mono</a></li>
+        <li>Pangram Pangram. Designer. 2023. <strong>Supply Sans TRIAL[Font]</strong>. Retrieved from <a href="https://pangrampangram.com/products/supply-sans">https://pangrampangram.com/products/supply-sans</a></li>
+        <li>Choise (Stack Overflow). Forum member. 2021. <strong>Using .otf fonts on web browsers[Resource]</strong>. Retrieved from <a href="https://stackoverflow.com/questions/3245141/using-otf-fonts-on-web-browsers">https://stackoverflow.com/questions/3245141/using-otf-fonts-on-web-browsers</a></li>
+        <li>W3Schools. writer. 2021. <strong>text transform [Resource]</strong>. Retrieved from <a href="https://www.w3schools.com/cssref/pr_text_text-transform.php"</a> https://www.w3schools.com/cssref/pr_text_text-transform.php</li>
+        <li>HIBI. Designer. 2023 <strong>Hibiki PCB[Image]</strong>. Retrieved from <a href="https://hibi.mx/collections/in-house/products/hibiki-extra-pcb">https://hibi.mx/collections/in-house/products/hibiki-extra-pcb</a></li>
+        <li>HIBI. Designer. 2023 <strong>Relegendables keycap[Image]</strong>. Retrieved from <a href="https://hibi.mx/collections/in-house/products/hibi-relegendables-extras">https://hibi.mx/collections/in-house/products/hibi-relegendables-extras</a></li>
+        <li>Grovemade. Designer. 2019. <strong>desk-pen[Image]</strong>. Retrieved from <a href="https://grovemade.com/product/desk-pen/?initial=501">https://grovemade.com/product/desk-pen/?initial=501</a></li>
+        <li>Grovemade. Designer. 2019. <strong>Task knife[Image]</strong>. Retrieved from <a href="https://grovemade.com/knife-collection/">https://grovemade.com/knife-collection/</a></li>
+
+      </ul>
+
+    </section>
+
+
+
+  </body>
+</html>
