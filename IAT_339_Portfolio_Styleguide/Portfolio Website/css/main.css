@@ -54,6 +54,7 @@ h4 {
 }
 
 a{
+	color: black;
 	text-decoration: none;
   font-family: 'PP Mori', monospace;
   font-weight: 200;
@@ -63,6 +64,7 @@ a{
 a:hover{
   color: #FF532E;
   transition-duration: 0.5s;
+	text-decoration: none;
 }
 
 p{
@@ -137,8 +139,8 @@ p{
 }
 
 .arrow{
-	margin-top: 1%;
-	padding-left: 3%;
+	margin-top: 0.9%;
+	padding-left: 4%;
 	z-index: 12;
 	position: fixed;
 	width: auto;
@@ -261,7 +263,6 @@ p{
 
 .detailContent p{
 	max-width: 100%;
-	text-align: center;
 }
 
 /* About  */
@@ -307,7 +308,9 @@ footer{
 }
 
 footer p{
-  font-size: 1vw;
+	font-family: 'PP Mori', monospace;
+	font-weight: 200;
+	font-size: 16px;
 	color: #FAFAFA;
 }
 
