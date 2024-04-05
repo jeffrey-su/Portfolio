@@ -139,8 +139,11 @@ p{
 }
 
 .arrow{
-	margin-top: 0.9%;
-	padding-left: 4%;
+	/* margin-top: -0.8%;
+	padding-left: 4%; */
+	bottom: 5%;
+	right: 5%;
+
 	z-index: 12;
 	position: fixed;
 	width: auto;
