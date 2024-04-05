@@ -24,7 +24,6 @@ body{
   background-size: cover;
 	background-color: #323237;
 
-
 }
 
 h1{
@@ -50,7 +49,7 @@ h3 {
 
 h4 {
   font-family: 'PP Mori', 'Tahoma', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   margin-bottom: 0.25rem;
 }
 
@@ -117,6 +116,7 @@ p{
 }
 
 #nav{
+	margin-top: 1%;
   z-index: 15;
 	display: flex;
 	flex-wrap: nowrap;
@@ -156,7 +156,7 @@ p{
 }
 
 .content{
-	padding-top: 20%;
+	padding-top: 10%;
 	margin-left: 15vw;
 	margin-right: 15vw;
 
@@ -178,15 +178,15 @@ p{
 .candleLightContent{
 	display: flex;
 	justify-content: space-between;
-	margin-top: 30vh;
+	margin-top: 20vh;
 }
 
 .goSFU{
-	margin-top: 50vh;
+	margin-top: 20vh;
 }
 
 .itServices{
-	margin-top: 30vh;
+	margin-top: 20vh;
 }
 
 .betterMeals{
@@ -216,6 +216,9 @@ p{
 	justify-content: space-between;
 }
 
+.projectDescriptionBox p{
+	color: #747474;
+}
 .description{
 	max-width: 25%;
 }
@@ -228,77 +231,37 @@ p{
 	margin-left: 16vw;
 }
 
-.detail1{
-	margin-top: 20vh;
-	margin-left: 12vw;
-	margin-right: 12vw;
+.detailBox{
+	display: grid;
+	grid-template-columns: repeat(3, 33.333333333%);
+	grid-template-rows: repeat(3, auto);
+	grid-row-gap: 5vh;
+	padding-top: 10vh;
+	padding-left: 12vw;
+	padding-right: 12vw;
+	background-color: rgba(114, 114, 114, 10%);
 }
 
-.detail2{
-	margin-left: 12vw;
-	margin-right: 12vw;
+.detail{
+	grid-column-start: span 3;
+
+	justify-self: center;
 }
 
-.detail3{
-	margin-left: 12vw;
-	margin-right: 12vw;
-	margin-bottom: 20vh;
+.detail img{
+	width: auto;
+	height: auto;
+	max-width: 100%;
 }
-
-.detailImg{
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: center;
-
-  background-color: rgba(142, 142, 142, 17%);
-}
-
-.detailImg img{
-  padding-top: 5%;
-  width: auto;
-  height: auto;
-  max-width: 90%;
-}
-
-.detail2Img{
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: center;
-  background-color: rgba(142, 142, 142, 17%);
-}
-
-.detail2Img img{
-  padding: 1%;
-  max-width: 33%;
-  height: auto;
-  width: 33%;
-}
-
 .detailContent{
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-  padding-bottom: 5%;
-
-  background-color: rgba(142, 142, 142, 17%);
+	grid-column-start: 2;
+	grid-column-end: 3;
 }
 
-.detailContent3{
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-  padding-top: 5%;
-  padding-bottom: 5%;
 
-  background-color: rgba(142, 142, 142, 17%);
-}
-
-.detailPara{
-  max-width: 40%
-}
-
-.detailPara3{
-  max-width: 20%
+.detailContent p{
+	max-width: 100%;
+	text-align: center;
 }
 
 /* About  */
@@ -326,7 +289,6 @@ p{
   padding-top: 5%;
   padding-bottom: 5%;
 
-  background-color: rgba(142, 142, 142, 17%);
 }
 
 .extrasContent img{
@@ -341,7 +303,7 @@ p{
 footer{
   background: #323237;
   box-shadow: 0 50vh 0 50vh #323237;
-	padding-bottom: 20vh;
+	padding-bottom: 10vh;
 }
 
 footer p{
