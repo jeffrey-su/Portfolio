@@ -5,7 +5,7 @@
 
 html {
   scroll-behavior: smooth;
-  cursor: url("../img/dot27x27.png"), auto;
+  cursor: url("../img/cursor.png"), auto;
 }
 
 .frame {
@@ -106,12 +106,17 @@ a {
   font-family: "PP Mori", monospace;
   font-weight: 200;
   font-size: auto;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  -webkit-transition: cursor 0.5s;
+  transition: cursor 0.5s;
 }
 a :hover {
   color: #FF532E;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
   text-decoration: none;
+  cursor: url("../img/cursorTilt.png"), auto;
 }
 
 p {
@@ -334,9 +339,9 @@ p {
   display: grid;
   -ms-grid-columns: (33.333333333%)[3];
   grid-template-columns: repeat(3, 33.333333333%);
-  -ms-grid-rows: auto 5vh auto 5vh auto;
+  -ms-grid-rows: auto 20vh auto 20vh auto;
   grid-template-rows: repeat(3, auto);
-  grid-row-gap: 5vh;
+  grid-row-gap: 20vh;
   margin-top: 5vh;
   padding-top: 10vh;
   padding-left: 12vw;
@@ -392,20 +397,23 @@ p {
   max-width: 100%;
 }
 
-.detail img {
+.detail {
   grid-column-start: span 3;
   -ms-grid-column-align: center;
       justify-self: center;
   width: auto;
   height: auto;
-  max-width: 80%;
+  max-width: 100;
 }
 
 .detailContent {
-  grid-column-start: span 2;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-column-span: 1;
+  grid-column-end: 3;
 }
 .detailContent p {
-  max-width: 60%;
+  max-width: 100%;
 }
 
 /* About  */

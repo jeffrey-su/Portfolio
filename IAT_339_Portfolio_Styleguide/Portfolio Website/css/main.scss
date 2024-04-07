@@ -12,7 +12,8 @@ $transDur: 0.5s;
 
 html{
 	scroll-behavior: smooth;
-		cursor: url("../img/dot27x27.png"), auto;
+	cursor: url("../img/cursor.png"), auto;
+	// cursor: crosshair;
 }
 
 .frame{
@@ -101,11 +102,14 @@ a{
   font-weight: 200;
 	font-size: auto;
 
+	transition-timing-function: ease-in-out;
+	transition: color $transDur;
+	transition: cursor $transDur;
 
 	:hover{
 		color: $orange;
-	  transition-duration: $transDur;
 		text-decoration: none;
+		cursor: url("../img/cursorTilt.png"), auto;
 	}
 }
 
@@ -296,7 +300,7 @@ p{
 	display: grid;
 	grid-template-columns: repeat(3, 33.333333333%);
 	grid-template-rows: repeat(3, auto);
-	grid-row-gap: 5vh;
+	grid-row-gap: 20vh;
 	margin-top: 5vh;
 	padding-top: 10vh;
 	padding-left: 12vw;
@@ -309,21 +313,21 @@ p{
 }
 
 
-.detail img{
+.detail{
 	grid-column-start: span 3;
 	justify-self: center;
 
 	width: auto;
 	height: auto;
-	max-width: 80%;
+	max-width: 100;
 }
 // change span from 2 to 3 for mobile
 .detailContent{
-	grid-column-start: span 2;
-	// grid-column-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 3;
 
 	p{
-		max-width: 60%;
+		max-width: 100%;
 	}
 }
 
