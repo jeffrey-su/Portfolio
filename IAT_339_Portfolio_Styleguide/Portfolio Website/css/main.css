@@ -12,13 +12,17 @@
   pointer-events: none;
 }
 
-.arrowPosition {
+#arrowPosition {
   -webkit-animation: fadeInAnimation ease-in 1s;
           animation: fadeInAnimation ease-in 1s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+#arrowPosition.fade {
+  opacity: 0;
 }
 
 body {
@@ -47,6 +51,22 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+@-webkit-keyframes fadeOutAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOutAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 h1 {
@@ -168,10 +188,10 @@ p {
   position: fixed;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 .arrow :hover {
   -webkit-transform: scale(1.2);
@@ -181,10 +201,10 @@ p {
 .arrowSide {
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 .arrowSide :hover {
   -webkit-transform: scale(1.2);

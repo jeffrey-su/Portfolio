@@ -18,12 +18,15 @@ $transDur: 0.5s;
 	pointer-events: none;
 }
 
-.arrowPosition{
+#arrowPosition{
 	animation: fadeInAnimation ease-in 1s;
 						animation-iteration-count: 1;
 						animation-fill-mode: forwards;
-}
 
+}
+#arrowPosition.fade{
+	opacity: 0;
+}
 body{
 	margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -39,14 +42,25 @@ body{
 }
 
 @keyframes fadeInAnimation {
-            0% {
-                opacity: 0;
-            }
+	0% {
+		opacity: 0;
+	}
 
-            100% {
-                opacity: 1;
-            }
-					}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOutAnimation {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
 h1{
   font-family: 'PP Mori', 'Tahoma', sans-serif;
   font-weight: 300;
@@ -145,7 +159,7 @@ p{
 	a{
 		color: black;
 	  transition-timing-function: ease-in-out;
-	  transition: color 0.5s;
+	  transition: color $transDur;
 		padding-top: 2rem;
 	}
 
@@ -162,7 +176,7 @@ p{
 	z-index: 12;
 	position: fixed;
 	transition-timing-function: ease-in-out;
-	transition: transform 0.2s;
+	transition: transform $transDur;
 
 
 	:hover{
@@ -174,7 +188,7 @@ p{
 
 .arrowSide{
 	transition-timing-function: ease-in-out;
-	transition: transform 0.2s;
+	transition: transform $transDur;
 
 
 	:hover{
@@ -385,5 +399,5 @@ footer{
 
 .linkedIn{
 	color: #FF532E;
-  transition-duration: 0.5s;
+  transition-duration: $transDur;
 }
