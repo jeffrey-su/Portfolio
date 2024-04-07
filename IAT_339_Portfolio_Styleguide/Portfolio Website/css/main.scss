@@ -10,6 +10,9 @@ $transDur: 0.5s;
 
 }
 
+html{
+	scroll-behavior: smooth;
+}
 
 .frame{
 	position: fixed;
@@ -22,8 +25,8 @@ $transDur: 0.5s;
 #arrowPosition{
 	opacity: 0;
 	animation: fadeInAnimation ease-in 10s;
-						animation-iteration-count: 1;
-						animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 
 }
 #arrowPosition.fade{
@@ -44,10 +47,6 @@ body{
 @keyframes fadeInAnimation {
 	0% {
 		opacity: 0;
-	}
-
-	50% {
-		opacity: 0.1;
 	}
 
 	100% {
