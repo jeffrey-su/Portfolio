@@ -7,8 +7,9 @@ $transDur: 0.5s;
 
 *{
 	box-sizing: border-box;
-	/* border: solid 0.5px black; */
+
 }
+
 
 .frame{
 	position: fixed;
@@ -19,7 +20,8 @@ $transDur: 0.5s;
 }
 
 #arrowPosition{
-	animation: fadeInAnimation ease-in 1s;
+	opacity: 0;
+	animation: fadeInAnimation ease-in 10s;
 						animation-iteration-count: 1;
 						animation-fill-mode: forwards;
 
@@ -27,6 +29,7 @@ $transDur: 0.5s;
 #arrowPosition.fade{
 	opacity: 0;
 }
+
 body{
 	margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -36,14 +39,15 @@ body{
   background-attachment: fixed;
   background-size: cover;
 	background-color: $backgroundColour;
-
-
-
 }
 
 @keyframes fadeInAnimation {
 	0% {
 		opacity: 0;
+	}
+
+	50% {
+		opacity: 0.1;
 	}
 
 	100% {
@@ -94,6 +98,7 @@ a{
   font-family: 'PP Mori', monospace;
   font-weight: 200;
 	font-size: auto;
+
 
 	:hover{
 		color: $orange;
@@ -302,7 +307,7 @@ p{
 }
 
 
-.detail{
+.detail img{
 	grid-column-start: span 3;
 	justify-self: center;
 
