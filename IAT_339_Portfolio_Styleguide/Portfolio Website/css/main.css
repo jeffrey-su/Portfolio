@@ -1,7 +1,11 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  /* border: solid 0.5px black; */
+}
+
+html {
+  scroll-behavior: smooth;
+  cursor: url("../img/dot27x27.png"), auto;
 }
 
 .frame {
@@ -13,6 +17,7 @@
 }
 
 #arrowPosition {
+  opacity: 0;
   -webkit-animation: fadeInAnimation ease-in 1s;
           animation: fadeInAnimation ease-in 1s;
   -webkit-animation-iteration-count: 1;
@@ -387,7 +392,7 @@ p {
   max-width: 100%;
 }
 
-.detail {
+.detail img {
   grid-column-start: span 3;
   -ms-grid-column-align: center;
       justify-self: center;
