@@ -106,7 +106,7 @@ a{
 	text-decoration: none;
   font-family: 'PP Mori', monospace;
   font-weight: 200;
-	font-size: auto;
+	font-size: 1rem;
 
 	transition-timing-function: ease-in-out;
 	transition: color $transDur;
@@ -182,6 +182,7 @@ p{
 	a:hover, a:focus{
 		text-decoration: none;
 	  color: $orange;
+		cursor: url("../img/cursorTilt.png"), auto;
 	}
 }
 
@@ -281,7 +282,7 @@ p{
 
 .projectDescription1{
 	display: flex;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: space-between;
 
 	p{
@@ -418,4 +419,109 @@ footer{
 .linkedIn{
 	color: #FF532E;
   transition-duration: $transDur;
+}
+
+// media querries
+@media (width < 1400px){
+
+	.detailContent{
+		grid-column-start: span 2;
+		grid-column-end: 3;
+
+		p{
+			grid-column-start: span 2;
+
+			font-size: 1.3rem;
+			line-height: 1.5rem;
+			max-width: 100%;
+		}
+	}
+
+}
+@media (width < 950px){
+
+	.projectDescriptionBox{
+		display: flex;
+		// flex-wrap: nowrap;
+		justify-content: flex-start;
+		flex-direction: row;
+	}
+
+	.projectDescription1{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+
+
+		p{
+			color: #747474;
+		}
+	}
+
+	.description{
+		max-width: 70%;
+		// align-self: flex-end;
+	}
+
+}
+
+@media (width < 700px){
+
+	.projectDescriptionBox{
+		display: flex;
+		// flex-wrap: nowrap;
+		justify-content: flex-start;
+		flex-direction: row;
+	}
+
+	.projectDescription1{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+
+
+		p{
+			color: #747474;
+			font-size: 0.5rem;
+		}
+	}
+
+	.description{
+		max-width: 100%;
+		// align-self: flex-end;
+	}
+	.detailContent p{
+
+		font-size: 1rem;
+		line-height: 1.5rem;
+		max-width: 100%;
+
+	}
+	h1{
+		padding-left: 5vw;
+		font-size: 2.5rem;
+	}
+	#nav{
+		margin-top: 1%;
+	  z-index: 15;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		width: 100%;
+
+
+		a{
+			font-size: 0.75rem;
+			color: black;
+		  transition-timing-function: ease-in-out;
+		  transition: color $transDur;
+			padding-top: 2rem;
+		}
+
+		a:hover, a:focus{
+			text-decoration: none;
+		  color: $orange;
+			cursor: url("../img/cursorTilt.png"), auto;
+		}
+	}
 }

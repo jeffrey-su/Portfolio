@@ -1,4 +1,4 @@
-const cursorSmall = document.querySelector('.small');
+// const cursorSmall = document.querySelector('.small');
 const cursorBig = document.querySelector('.big');
 
 
