@@ -2,7 +2,7 @@ $orange: #FF532E;
 $grey: #727272;
 $backgroundColour: #323237;
 $marginSpace: 15vw;
-$transDur: 0.5s;
+$transDur: 0.3s;
 
 
 *{
@@ -18,8 +18,8 @@ html{
 
 .small{
 	position: absolute;
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
   border: 2px solid #fff;
   border-radius: 50%;
 }
@@ -291,11 +291,11 @@ p{
 }
 
 .description{
-	max-width: 25%;
+	max-width: 35%;
 }
 
 .blank{
-	width: 17vw;
+	width: 33%;
 }
 
 .blank .arrow{
@@ -399,6 +399,21 @@ footer{
 		font-weight: 200;
 		font-size: 16px;
 		color: #FAFAFA;
+	}
+
+
+}
+
+.footerInfo{
+	a{
+		transition-timing-function: ease-in-out;
+		transition: color $transDur;
+	}
+
+	a:hover, a:focus{
+		text-decoration: none;
+		color: $orange;
+		cursor: url("../img/cursorTilt.png"), auto;
 	}
 }
 
