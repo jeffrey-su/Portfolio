@@ -112,8 +112,9 @@ a{
 	transition: color $transDur;
 
 	:hover{
-		cursor: url("../img/cursorTilt.png"), auto;
+
 		color: $orange;
+		cursor: url("../img/cursorTilt.png"), auto;
 		text-decoration: none;
 	}
 }
@@ -124,6 +125,7 @@ p{
 	font-size: 16px;
   line-height: 1rem;
 }
+
 
 .intro{
   display: flex;
@@ -230,7 +232,7 @@ p{
 		width: auto;
 		height: auto;
 		max-width: 100%;
-		border-radius: 2%;
+		border-radius: 1vw;
 		transition-timing-function: ease-in-out;
 		transition: transform 0.5s;
 	}
@@ -326,6 +328,18 @@ p{
 	width: auto;
 	height: auto;
 	max-width: 100;
+
+	a{
+		transition-timing-function: ease-in-out;
+		transition: color $transDur;
+
+		:hover{
+
+			color: $orange;
+			cursor: url("../img/cursorTilt.png"), auto;
+			text-decoration: none;
+		}
+	}
 }
 // change span from 2 to 3 for mobile
 .detailContent{
@@ -354,6 +368,7 @@ p{
 }
 
 .profileImg{
+	border-radius: 1vw;
 	height: auto;
 	max-width: 50%;
 }
@@ -404,18 +419,6 @@ footer{
 
 }
 
-.footerInfo{
-	a{
-		transition-timing-function: ease-in-out;
-		transition: color $transDur;
-	}
-
-	a:hover, a:focus{
-		text-decoration: none;
-		color: $orange;
-		cursor: url("../img/cursorTilt.png"), auto;
-	}
-}
 
 .footer{
   padding-top: 4vw;
@@ -425,6 +428,18 @@ footer{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+
+	p{
+		color: white;
+		transition-timing-function: ease-in-out;
+		transition: color $transDur;
+	}
+
+	p:hover, p:focus{
+		text-decoration: none;
+		color: $orange;
+		// cursor: url("../img/cursorTilt.png"), auto;
+	}
 }
 
 .footerInfo{
