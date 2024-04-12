@@ -1,5 +1,5 @@
-// const cursorSmall = document.querySelector('.small');
-const cursorBig = document.querySelector('.big');
+const cursorSmall = document.querySelector('.small');
+// const cursorBig = document.querySelector('.big');
 
 
 const positionElement = (e)=> {

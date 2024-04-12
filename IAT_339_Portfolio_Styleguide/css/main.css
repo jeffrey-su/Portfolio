@@ -351,7 +351,7 @@ code {
 }
 
 /* Styling for the navigation button */
-.defaultButton {
+#defaultButton {
   font-family: "PP Neue Montreal Mono", "Impact", sans-serif;
   background-color: #FF3D00;
   border: none;
@@ -366,7 +366,7 @@ code {
   transition: background-color 0.5s ease-in-out;
 }
 
-.defaultButton:hover, .defaultButton:focus {
+#defaultButton:hover, #defaultButton:focus {
   background-color: #767676;
 }
 

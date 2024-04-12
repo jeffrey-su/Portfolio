@@ -122,10 +122,27 @@ a{
 p{
 	font-family: 'PPMori-Extralight', monospace;
 	font-weight: 300;
-	font-size: 16px;
-  line-height: 1rem;
+	font-size: 20px;
+  line-height: 1.5rem;
 }
 
+.defaultButton {
+  font-family: 'PPMori-Extralight', 'Impact', sans-serif;
+	font-size: 100%;
+  background-color: #FF3D00;
+  border: none;
+  border-radius: 25rem;
+  color: #ffffff;
+  width: 15rem;
+  padding: 10px;
+  margin: 8px 0;
+  transition-timing-function: ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.defaultButton:hover, .defaultButton:focus {
+  background-color: #767676;
+}
 
 .intro{
   display: flex;
@@ -157,14 +174,6 @@ p{
 	}
 }
 
-// .h0{
-// 	position: absolute;
-// 	font-size: 100px;
-// 	font-weight: bold;
-// 	mix-blend-mode: color-burn;
-//
-// 	font-style: normal;
-// }
 
 #nav{
 	margin-top: 1%;
@@ -175,6 +184,7 @@ p{
 	width: 100%;
 
 	a{
+		font-size: 20px;
 		color: black;
 	  transition-timing-function: ease-in-out;
 	  transition: color $transDur;
@@ -308,11 +318,12 @@ p{
 	display: grid;
 	grid-template-columns: repeat(3, 33.333333333%);
 	grid-template-rows: repeat(3, auto);
-	grid-row-gap: 20vh;
+	grid-row-gap: 10vh;
 	margin-top: 5vh;
 	padding-top: 10vh;
 	padding-left: 12vw;
 	padding-right: 12vw;
+	padding-bottom: 5vh;
 	background-color: rgba(114, 114, 114, 10%);
 
 	img{
@@ -341,17 +352,29 @@ p{
 		}
 	}
 }
+
+.detailButton{
+	grid-column-start: span 3;
+	justify-self: center;
+
+	width: auto;
+	height: auto;
+	max-width: 100;
+}
+
+.detailHeader{
+	justify-self: center;
+}
 // change span from 2 to 3 for mobile
 .detailContent{
 	grid-column-start: 2;
-	grid-column-end: 3;
-
 	p{
 		font-size: 1.3rem;
-		line-height: 1.5rem;
+		line-height: 1.8rem;
 		max-width: 100%;
 	}
 }
+
 
 
 /* About  */
@@ -455,17 +478,22 @@ footer{
 @media (width < 1400px){
 
 	.detailContent{
-		grid-column-start: span 2;
-		grid-column-end: 3;
+		grid-column: 1 / span 3;
+		font-size: 1rem;
+		line-height: 1.5rem;
+		max-width: 70%;
+		justify-self: center;
 
 		p{
-			grid-column-start: span 2;
-
-			font-size: 1.3rem;
-			line-height: 1.5rem;
 			max-width: 100%;
 		}
 	}
+
+	.detailHeader{
+		grid-column-start: 2;
+		justify-self: center;
+	}
+
 
 }
 @media (width < 950px){
@@ -516,17 +544,33 @@ footer{
 		}
 	}
 
+	.detailHeader{
+		grid-column-start: 2;
+		justify-self: center;
+	}
+
 	.description{
 		max-width: 100%;
 		// align-self: flex-end;
 	}
-	.detailContent p{
-
+	.detailContent{
+		grid-column: 1 / span 3;
 		font-size: 1rem;
 		line-height: 1.5rem;
 		max-width: 100%;
+		justify-self: center;
+
+		p{
+			max-width: 100%;
+		}
+	}
+
+	.detailButton{
+		grid-column-start: 2 ;
+		justify-self: center;
 
 	}
+
 	h1{
 		padding-left: 5vw;
 		font-size: 2.5rem;
@@ -554,6 +598,10 @@ footer{
 			cursor: url("../img/cursorTilt.png"), auto;
 		}
 	}
+
+	p{
+		font-size: 0.75rem;
+	}
 }
 
 @font-face {
@@ -562,7 +610,7 @@ footer{
     src: url('../fonts/PPMori-Extralight.woff2') format('woff2'),
         url('../fonts/PPMori-Extralight.ttf') format('truetype');
 
-    font-weight: 100;
+    font-weight: 300;
     font-style: normal;
 
 }
