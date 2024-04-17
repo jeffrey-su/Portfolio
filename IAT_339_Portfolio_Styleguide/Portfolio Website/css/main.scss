@@ -142,6 +142,7 @@ p{
 
 .defaultButton:hover, .defaultButton:focus {
   background-color: #767676;
+	color: #ffffff;
 }
 
 .intro{
@@ -392,7 +393,7 @@ p{
 
 .profileImg{
 	border-radius: 1vw;
-	height: auto;
+	max-height: 100%;
 	max-width: 50%;
 }
 
@@ -451,6 +452,8 @@ footer{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+	padding-left: $marginSpace;
+	padding-right: $marginSpace;
 
 	p{
 		color: white;
@@ -494,13 +497,23 @@ footer{
 		justify-self: center;
 	}
 
+	.aboutBox{
+		flex-direction: column;
+		align-items: center;
+	}
 
+	.aboutPara{
+		max-width: 100%;
+	}
+
+	.profileImg{
+		max-width: 100%;
+	}
 }
 @media (width < 950px){
 
 	.projectDescriptionBox{
 		display: flex;
-		// flex-wrap: nowrap;
 		justify-content: flex-start;
 		flex-direction: row;
 	}
@@ -519,6 +532,10 @@ footer{
 	.description{
 		max-width: 70%;
 		// align-self: flex-end;
+	}
+
+	.footerContent{
+	  flex-direction: column;
 	}
 
 }
